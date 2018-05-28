@@ -1,0 +1,140 @@
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+button{
+  color: #fff;
+}
+body,html,#app{
+  height:100%;
+  margin-top: 0;
+}
+.el-table thead tr  {
+  background: #EDEEF2;
+}
+.el-submenu.is-active.is-opened .el-menu-item{
+  background: #222;
+}
+.el-table th {
+  text-align: center!important;
+}
+.clearfix{
+  overflow: hidden;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.con_width{
+  /*min-width:1200px;*/
+  margin:0 auto;
+  height:100%;
+  /*width:95%;*/
+  /*max-width:1400px;*/
+}
+.main{
+  width: 100%;
+  height: 100%;
+  padding:6% 0;
+}
+.el-main{
+  padding: 15px 20px;
+}
+.icon_menu{
+  margin-right: 12px;
+  margin-left: 2px;
+}
+.adminName{
+  font-size:16px;
+  cursor: pointer;
+  color: #fff;
+}
+.el-header{
+  background: #1F76EA;
+  color: #fff;
+  width:100%;
+  padding:0 2%;
+  /*height:50px;*/
+  height:7%;
+  line-height:50px;
+  box-shadow: 0 1px 4px 0 rgba(51, 51, 51, 0.1);
+}
+.login-form{
+  width: 360px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 45px 64px 20px 0;
+  background: #fff;
+  margin:6% auto;
+}
+.child_title{
+  text-align: left;
+  padding:10px 20px;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,.08);
+  color: #333;
+  font-size:20px;
+}
+.child_title2 {
+  padding: 0;
+  font-size: 20px;
+  line-height: 35px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 600;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 20px;
+  color: #515151;
+}
+.page-content{
+  margin-top:10px;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,.08);
+  padding:10px 20px;
+}
+.header_search{
+  margin-bottom:20px;
+}
+.el-aside{
+  background: #274a61;
+}
+.el-menu{
+  border-right:0;
+}
+.totalPerson{
+  display: inline-block;
+  line-height: 2.5;
+}
+.add-img{
+  border:1px dashed #DCDFE6;
+  line-height:170px;
+  text-align: center;
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  border-radius:5px;
+}
+.img-box{
+  /*margin:0 auto;*/
+  max-width:232px;
+  height:150px;
+  overflow: hidden;
+}
+.add-img:hover{
+  border:1px dashed #1e90ff;
+}
+.add-img i{
+  font-size: 73px;
+  color: #DCDFE6;
+}
+.img-box img{
+  width:100%;
+  height:100%;
+}
