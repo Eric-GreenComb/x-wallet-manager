@@ -68,7 +68,7 @@
       <div class="block">
         <el-pagination
           @current-change="handleCurrentChange"
-          :page-size="5"
+          :page-size="10"
           layout="total, prev, pager, next"
           :total="total_count">
         </el-pagination>
@@ -81,7 +81,7 @@
 
 import Header from '../common/common_header.vue'
 import Header2 from '../common/common_headerTitle.vue'
-import {getTokenList, getClassfiy, deleteCommonWithType, supportGoods} from '../../api/index'
+import {getTokenList, tokenCount, deleteCommonWithType, supportGoods} from '../../api/index'
 export default {
   components: {
     'common-header': Header,
@@ -132,7 +132,16 @@ export default {
         // console.log(res);
         _this.loading = false
         _this.tableData = res.data.msg
-        _this.total_count = parseInt(res.data.msg.length)
+        //获取积分数量
+        tokenCount().then(function (res) {
+          //console.log(res)
+          if(res.data.errcode == 0){
+            _this.total_count = res.data.msg;
+          }
+        }).catch(function (err) {
+          console.log(err)
+        })
+
       }).catch(function (err) {
       })
     },

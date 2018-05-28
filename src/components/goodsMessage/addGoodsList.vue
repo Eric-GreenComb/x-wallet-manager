@@ -11,8 +11,8 @@
           <el-form-item label="密    码">
             <el-input v-model="ruleForm.pwd" placeholder="请输入用户密码" clearable ></el-input>
           </el-form-item>
-          <el-form-item label="昵    称">
-            <el-input v-model="ruleForm.name" placeholder="请输入用户昵称" clearable></el-input>
+          <el-form-item label="名    称">
+            <el-input v-model="ruleForm.name" placeholder="请输入用户名称" clearable></el-input>
           </el-form-item>
           <el-form-item label="标    识">
             <el-input v-model="ruleForm.symbol" placeholder="请输入积分标识" clearable></el-input>
@@ -21,8 +21,7 @@
             <el-input v-model="ruleForm.total" placeholder="请输入发布数量" clearable></el-input>
           </el-form-item>
           <el-form-item label="备    注">
-            <editor ref="myTextEditor" :fileName="'uploadfile'" v-model="ruleForm.desc"
-                    style="width: 90%;margin: 0 auto;text-align: left;"></editor>
+            <el-input v-model="ruleForm.desc" placeholder="请输入备注信息" clearable></el-input>
           </el-form-item>
           <el-form-item>
             <el-button type="primary" @click="save()">立即发布</el-button>

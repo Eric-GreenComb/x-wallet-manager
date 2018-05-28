@@ -63,7 +63,7 @@
       <div class="block">
         <el-pagination
           @current-change="handleCurrentChange"
-          :page-size="5"
+          :page-size="10"
           layout="total, prev, pager, next"
           :total="total_count">
         </el-pagination>
@@ -123,7 +123,16 @@ export default {
        // console.log(res);
         _this.loading = false
         _this.tableData = res.data
-        _this.total_count = parseInt(res.data.length)
+        //获取用户数量
+        userCount().then(function (res) {
+          //console.log(res)
+          if(res.data.errcode == 0){
+            _this.total_count = res.data.msg;   //用户的数量 27人
+          }
+        }).catch(function (err) {
+          console.log(err)
+        })
+
       }).catch(function (err) {
       })
     },
