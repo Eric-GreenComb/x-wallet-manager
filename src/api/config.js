@@ -2,9 +2,9 @@
 // let base = 'http://www.91top.club/hpt/admin/index.php'
 
 /*数字钱包接口*/
-let domain = "http://123.206.29.15:4100";
-let base = "http://123.206.29.15:4100/api/v1";
-let base_admin = "http://123.206.29.15:4100/api/admin/v1";
+let domain = "http://47.89.15.157:13500";
+let base = "http://47.89.15.157:13500/api/v1";
+let base_admin = "http://47.89.15.157:13500/api/admin/v1";
 
 export default{
 
